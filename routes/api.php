@@ -13,9 +13,9 @@ use Symfony\Component\HttpKernel\HttpCache\Store;
 //     return $request->user();
 // });
 
-Route::post('/register',[User1Controller::class,'register']);
-Route::post('/login',[User1Controller::class,'login']);
-Route::get('/AllUsers',[User1Controller::class,'index']);
+Route::post('register',[User1Controller::class,'register']);
+Route::post('login',[User1Controller::class,'login']);
+Route::get('AllUsers',[User1Controller::class,'index']);
 // دا اليوزر فورم
 Route::middleware('auth:sanctum')->group(function(){
             
